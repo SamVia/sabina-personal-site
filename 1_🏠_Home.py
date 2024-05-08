@@ -33,3 +33,6 @@ st.markdown(img_back,unsafe_allow_html=True)
 if st.session_state.device == "desktop":
     for _ in range(523):
         st.write("\n")
+elif st.session_state.device == "mobile":
+    for _ in range(100):
+        st.write("\n")
