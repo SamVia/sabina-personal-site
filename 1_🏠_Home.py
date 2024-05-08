@@ -7,6 +7,11 @@ hide_st_style = """
     </stile>
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+if "device" not in st.session_state:
+    st.session_state.device = "desktop"
+st.session_state.device
+
 link = "https://github.com/SamVia/test_python/blob/main/combined_image.png?raw=true"
 img_back=f"""
 <style>
@@ -25,5 +30,6 @@ background: rgba(0,0,0,0);
 """
 
 st.markdown(img_back,unsafe_allow_html=True)
-for _ in range(524):
-    st.write("\n")
+if st.session_state.device == "desktop":
+    for _ in range(523):
+        st.write("\n")
