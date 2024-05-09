@@ -39,32 +39,32 @@ st.markdown(img_back,unsafe_allow_html=True)
 #     }
 # </style>
 # """, unsafe_allow_html=True)
-with st.sidebar:
-    sidebar="""<style>
-    [data-testid="stSidebar"] {
-        background: LightBlue;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-    }
-    [data-testid="stSidebar"] .footer {
-        text-align: center;
-        width: 100%;
-        position:relative;
-        top:40vh;
-    }
-</style>
-<div data-testid="stSidebar">
-    <div></div>
-    <div class="footer">
-        Your text here
-    </div>
-</div>
-    """
+# with st.sidebar:
+#     sidebar="""<style>
+#     [data-testid="stSidebar"] {
+#         background: LightBlue;
+#         display: flex;
+#         flex-direction: column;
+#         justify-content: space-between;
+#         position: relative;
+#     }
+#     [data-testid="stSidebar"] .footer {
+#         text-align: center;
+#         width: 100%;
+#         position:relative;
+#         top:40vh;
+#     }
+# </style>
+# <div data-testid="stSidebar">
+#     <div></div>
+#     <div class="footer">
+#         Your text here
+#     </div>
+# </div>
+#     """
 
 
-    st.markdown(sidebar,unsafe_allow_html=True)
+#     st.markdown(sidebar,unsafe_allow_html=True)
 if st.session_state.device == "desktop":
     for _ in range(523):
         st.write("\n")

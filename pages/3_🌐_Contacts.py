@@ -81,3 +81,7 @@ with col2:
     st.markdown(button_logo("","https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png", True), unsafe_allow_html=True)
 with col3:
     st.markdown(button_logo("","https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png", True), unsafe_allow_html=True)
+with col4:
+    with open("Pascuttini Sabina - curriculum.pdf", "rb") as f:
+        st.write("\n")
+        st.download_button("Download il CV:",data=f, file_name="Pascuttini Sabina - curriculum.pdf")
