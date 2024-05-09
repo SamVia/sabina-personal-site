@@ -30,7 +30,6 @@ def button_logo(site, logo, circle):
         transition: transform .2s;
         outline: none;
         position:relative;
-        left:{-100}px;
     }}
 
     .myButton:hover {{
