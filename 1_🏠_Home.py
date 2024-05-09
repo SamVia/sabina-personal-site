@@ -25,6 +25,7 @@ background-position: center center;
 background-repeat: no-repeat;
 background-attachment: local;
 overflow-y:auto;
+background-color: white;
 }}
 [data-testid="stHeader"] {{
 background: rgba(0,0,0,0);
