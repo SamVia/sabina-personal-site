@@ -1,5 +1,8 @@
 
 import streamlit as st
+
+st.set_page_config(initial_sidebar_state="expanded")
+
 hide_st_style = """
     <style>
     footer {visibility: hidden;}
@@ -7,7 +10,7 @@ hide_st_style = """
     </stile>
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
-st.set_page_config(initial_sidebar_state="expanded")
+
 if "device" not in st.session_state:
     st.session_state.device = "desktop"
 
